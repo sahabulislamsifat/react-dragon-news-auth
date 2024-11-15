@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <div className="flex items-center justify-between py-2 my-5">
-      <div>{user.name}</div>
+      <div>{user && user.name}</div>
       <div className="space-x-5">
         <Link>Home</Link>
         <Link>Career</Link>
