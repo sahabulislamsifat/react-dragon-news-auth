@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaGoogle } from "react-icons/fa";
+import { FaGithub, FaGoogle, FaTwitter } from "react-icons/fa";
 
 const SocialLogin = () => {
   return (
@@ -11,6 +11,9 @@ const SocialLogin = () => {
         </button>
         <button className="btn bg-base-300 rounded-none">
           <FaGithub></FaGithub> GitHub
+        </button>
+        <button className="btn bg-base-300 rounded-none">
+          <FaTwitter></FaTwitter> Twitter
         </button>
       </div>
     </div>
