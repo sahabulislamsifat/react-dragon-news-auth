@@ -6,16 +6,26 @@ const FindUs = () => {
     <div>
       <h2 className="font-semibold mt-3">Find Us On</h2>
       <div className="join join-vertical flex *:bg-base-100">
-        <button className="btn join-item justify-start">
+        <a
+          className="btn join-item justify-start"
+          href="https://www.facebook.com/sahabulislamsifat"
+          target="_blank"
+        >
           <FaFacebook></FaFacebook> Facebook
-        </button>
+        </a>
 
-        <button className="btn join-item justify-start">
+        <a
+          className="btn join-item justify-start"
+          href="https://www.instagram.com/sahabulislamsifat/"
+        >
           <FaInstagram></FaInstagram> Instagram
-        </button>
-        <button className="btn justify-start join-item">
+        </a>
+        <a
+          className="btn justify-start join-item"
+          href="https://x.com/sifat016"
+        >
           <FaTwitter></FaTwitter> Twitter
-        </button>
+        </a>
       </div>
     </div>
   );
