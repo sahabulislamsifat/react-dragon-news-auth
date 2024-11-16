@@ -1,5 +1,6 @@
 import React from "react";
 import { FaEye, FaShareAlt, FaStar } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const NewsCard = ({ news }) => {
   return (
@@ -39,7 +40,12 @@ const NewsCard = ({ news }) => {
         {news.details.length > 100
           ? `${news.details.slice(0, 100)}...`
           : news.details}
-        <span className="text-red-500 cursor-pointer ml-2">Read More</span>
+        <Link
+          to={`/news/${news._id}`}
+          className="text-red-500 cursor-pointer ml-2"
+        >
+          Read More
+        </Link>
       </p>
 
       {/* Rating and Views */}
